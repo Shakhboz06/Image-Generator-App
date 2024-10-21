@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex justify-center items-center">
     <NFlex justify="center" align="center">
       <h1 class="header-title text-2xl m-5">Welcome to my Image Generator, Editor & Variant Creator</h1>
     </NFlex>
