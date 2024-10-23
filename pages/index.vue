@@ -1,22 +1,24 @@
 <template>
-  <div class="h-screen">
-    <NFlex justify="center" align="center">
-      <h1 class="header-title text-2xl m-5">Welcome to my Image Generator, Editor & Variant Creator</h1>
-    </NFlex>
-    <header class="custom-header">
-  
-      <NFlex justify="between" align="center" class="header-container">
-        <NFlex gap="3" justify="center" align="center" class="nav-links">
-          <NuxtLink to="/generate" class="nav-item">Generate Image</NuxtLink>
-          <NuxtLink to="/edit" class="nav-item">Edit Image</NuxtLink>
-          <NuxtLink to="/variation" class="nav-item">Generate Variation</NuxtLink>
+  <div class="w-screen h-screen flex justify-center items-center">
+    <div>
+      <NFlex justify="center" align="center">
+        <h1 class="header-title text-2xl m-5">Welcome to my Image Generator, Editor & Variant Creator</h1>
+      </NFlex>
+      <header class="custom-header">
+        
+        <NFlex justify="between" align="center" class="header-container">
+          <NFlex gap="3" justify="center" align="center" class="nav-links">
+            <NuxtLink to="/generate" class="nav-item">Generate Image</NuxtLink>
+            <NuxtLink to="/edit" class="nav-item">Edit Image</NuxtLink>
+            <NuxtLink to="/variation" class="nav-item">Generate Variation</NuxtLink>
         </NFlex>
       </NFlex>
     </header>
-    <div class="images flex justify-center mt-5 gap-4">
-      <img src="../public/images/1.webp" alt="" class="w-2/3 h-96 rounded-md">
+    <div class="images flex justify-center mt-5 gap-4 w-full">
+      <img src="../public/images/1.webp" alt="" class="h-96 rounded-md">
     </div>
   </div>
+</div>
 </template>
 
 
@@ -25,10 +27,11 @@
   background-color: #333535;
   padding: 10px 20px;
   border-radius: 30px;
-  max-width: 70%;
   margin: 10px auto;
   display: flex;
+  
   justify-content: center;
+  align-items: center;
 }
 
 .header-title {
